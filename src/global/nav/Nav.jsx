@@ -23,7 +23,7 @@ const Nav = () => {
                     <Link className='border-b lg:border-none py-3 hover:bg-[#f5f5f5] hover:text-[#005CE6] px-6 lg:px-0'>My Jobs</Link>
                     <Link className='border-b lg:border-none py-3 hover:bg-[#f5f5f5] hover:text-[#005CE6] px-6 lg:px-0'>Blogs</Link>
                 </div>
-                <button className=''>Profile</button>
+                <Link to={'/login'} className=''>Sign In</Link>
             </div>
         </div>
     );
