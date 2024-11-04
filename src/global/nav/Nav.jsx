@@ -15,7 +15,7 @@ const Nav = () => {
                         <span className='text-xl'><IoMdArrowDropup /></span> :
                         <span className='text-xl'><IoMdArrowDropdown /></span>}
                 </button>
-                <div className={`flex flex-col lg:flex-row justify-center lg:items-center absolute lg:static bg-[#005CE6] lg:gap-4 whitespace-nowrap top-full left-0 w-full lg:w-auto ${isDrop ? 'block' : 'hidden lg:flex'}`}>
+                <div className={`flex flex-col lg:flex-row justify-center lg:items-center absolute lg:static bg-[#005CE6] lg:gap-6 whitespace-nowrap top-full left-0 w-full lg:w-auto ${isDrop ? 'block' : 'hidden lg:flex'}`}>
                     <Link className='border-y lg:border-none py-3 hover:bg-[#f5f5f5] hover:text-[#005CE6] px-6 lg:px-0'>Home</Link>
                     <Link className='border-b lg:border-none py-3 hover:bg-[#f5f5f5] hover:text-[#005CE6] px-6 lg:px-0'>All Jobs</Link>
                     <Link className='border-b lg:border-none py-3 hover:bg-[#f5f5f5] hover:text-[#005CE6] px-6 lg:px-0'>Applied Jobs</Link>
