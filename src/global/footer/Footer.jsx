@@ -5,9 +5,9 @@ import { MdEmail } from 'react-icons/md';
 
 const Footer = () => {
     return (
-        <div className='bg-[#005CE6]  py-16 text-white space-y-4'>
-            <div className='flex justify-between gap-9 max-w-7xl mx-auto pb-6'>
-                <div className='w-1/3'>
+        <div className='bg-[#005CE6]  py-16 text-white space-y-4 px-3 lg:px-0'>
+            <div className='flex flex-col lg:flex-row justify-between gap-9 max-w-7xl mx-auto pb-6'>
+                <div className='lg:w-1/3'>
                     <h2 className='font-bold pb-2'>CareerKey</h2>
                     <div className='space-y-4'>
                         <p>CareerKey is your dedicated job-seeking platform, designed to make finding your next opportunity simple and efficient. Explore tailored job listings, bookmark your favorites, and stay organized as you take the next step in your career journey.</p>
@@ -23,7 +23,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-1/3'>
+                <div className='lg:w-1/3'>
                     <h2 className='font-bold  pb-2'>Latest Blog</h2>
                     <div className='space-y-4'>
                         <p>Your trusted platform to explore, bookmark, and apply for the latest job opportunities tailored just for you.</p>
@@ -33,7 +33,7 @@ const Footer = () => {
                     </div>
 
                 </div>
-                <div className='w-1/3'>
+                <div className='lg:w-1/3'>
                     <h2 className='font-bold pb-3'>Stay in touch</h2>
                     <div className='flex justify-start items-center gap-5 text-xl'>
                         <span><FaFacebook /></span>
@@ -45,7 +45,7 @@ const Footer = () => {
 
             </div>
             <p className='border-t border-gray-300 max-w-7xl mx-auto'></p>
-            <div className='flex justify-between items-center max-w-7xl mx-auto'>
+            <div className='flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto gap-2 lg:gap-0'>
                 <div className='flex justify-start items-center gap-5'>
                     <span>Home</span>
                     <span>Blogs</span>
