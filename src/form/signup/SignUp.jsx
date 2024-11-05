@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
+import { IoEyeOffOutline, IoEyeOutline } from 'react-icons/io5';
 
 const SignUp = () => {
+    const [showPass, setShowPass] = useState(false);
     return (
         <div className='lg:w-2/3 mx-auto mt-6 space-y-6'>
             <form className='space-y-3'>
@@ -15,7 +17,17 @@ const SignUp = () => {
                 </div>
                 <div className='flex flex-col gap-1'>
                     <span>Password</span>
-                    <input className=' bg-gray-200 outline-none py-2 rounded-md border px-3' type="password" />
+                    <div className='relative'>
+                        <input className=' bg-gray-200 outline-none py-2 rounded-md border px-3 w-full' type={showPass ? 'text' : 'password'} />
+                        <button onClick={() => setShowPass(!showPass)} type='button' className='absolute top-1/2 transform -translate-y-1/2 right-0 bg-gray-200 inline-block px-3 h-full'>
+                            {
+                                showPass ?
+                                    <span><IoEyeOutline /></span> :
+                                    <span><IoEyeOffOutline /></span>
+
+                            }
+                        </button>
+                    </div>
                 </div>
                 <div className='flex flex-col gap-1'>
                     <span>Photo URL</span>
