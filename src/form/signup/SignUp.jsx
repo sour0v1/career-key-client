@@ -3,7 +3,7 @@ import { FcGoogle } from 'react-icons/fc';
 
 const SignUp = () => {
     return (
-        <div className='w-2/3 mx-auto mt-6 space-y-6'>
+        <div className='lg:w-2/3 mx-auto mt-6 space-y-6'>
             <form className='space-y-3'>
                 <div className='flex flex-col gap-1'>
                     <span>Name</span>
@@ -24,7 +24,7 @@ const SignUp = () => {
                 <input className='bg-[#005CE6] outline-none py-2 rounded-md text-white w-full' type="submit" value={'Sign Up'} />
             </form>
             <p className='text-center'>Or</p>
-            <button className='bg-gray-200 outline-none py-2 rounded-md w-full flex justify-center items-center gap-3'>
+            <button className='bg-gray-200 hover:bg-gray-300 outline-none py-2 rounded-md w-full flex justify-center items-center gap-3'>
                 <span><FcGoogle /></span>
                 <span>Google</span>
             </button>
